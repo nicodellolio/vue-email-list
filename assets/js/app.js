@@ -16,6 +16,9 @@ createApp({
                 })
             }
             console.log(this.emailList);
+        },
+        cleanList(){
+            this.emailList.splice(0, 10)
         }
     }
 }).mount('#app')
