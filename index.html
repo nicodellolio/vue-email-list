@@ -90,13 +90,13 @@
 
         <div class="list">
             <ol>
-                <li v-for="email in emailList">{{ email }}</li>
+                <li v-if="emailList.length == 10" v-for="email in emailList">{{ email }}</li>
             </ol>
-            <button @click="cleanList()" class="bin"><i class="fa-solid fa-trash"></i></button>
+            <button @click="cleanList()" v-if="emailList.length !== 0" class="bin"><i class="fa-solid fa-trash"></i></button>
         </div>
 
         <div class="btn">
-            <button class="press" v-if="emailList == 0 " @click="generateList()">
+            <button class="press" v-if="emailList.length == 0" @click="generateList()">
                 <i class="fa-solid fa-person-military-pointing"></i>
             </button>
             <button class="done" v-else>
