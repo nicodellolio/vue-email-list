@@ -1,0 +1,82 @@
+        #app {
+            display: flex;
+            align-items: center;
+            background: rgb(0, 198, 255);
+            background: radial-gradient(circle, rgba(0, 198, 255, 1) 0%, rgba(255, 255, 255, 0.8842364532019704) 92%);
+
+            >div {
+                width: 50%;
+                height: 880px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            }
+
+            .list {
+                background-color: #95a5f31c;
+                margin: 2rem;
+                font-size: 2rem;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+            }
+
+            .btn {
+                display: flex;
+                height: fit-content
+            }
+        }
+
+        button {
+            width: 350px;
+            font-size: 8rem;
+            margin-left: 5rem;
+
+
+            &.press {
+                background: rgb(226, 226, 235);
+                background: linear-gradient(90deg, rgba(226, 226, 235, 1) 13%, rgba(0, 212, 255, 1) 42%, rgba(0, 50, 60, 1) 100%);
+                cursor: pointer;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+            }
+
+            &.done {
+                background: rgb(226, 226, 235);
+                background: radial-gradient(circle, rgba(226, 226, 235, 1) 13%, rgba(0, 255, 10, 1) 49%, rgba(0, 106, 11, 1) 100%);
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+            }
+
+            &.bin {
+                border-radius: 100%;
+                width: fit-content;
+                padding: 0.6rem 1.1rem;
+                font-size: 2rem;
+                border: none;
+                background-color: rgb(255, 0, 0);
+                opacity: 0.25;
+                color: white;
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                cursor: pointer;
+            }
+
+        }
+
+        .bin:hover {
+            transform: scale(1.4);
+            /* padding: 0.6rem 1.1rem;
+            font-size: 2rem; */
+            opacity: 1;
+        }
+        .well_done{
+            position: absolute;
+            background-color: black;
+            right: 20%;
+            top: 30%;
+            border-radius: 50px;
+            background-color: rgb(136, 228, 139);
+            font-size: 1.75rem;
+            padding: 1rem;        
+        }

@@ -2,7 +2,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            emailList: []
+            emailList : [],
+            small : false
         }
     },
     methods: {
@@ -19,6 +20,12 @@ createApp({
         },
         cleanList(){
             this.emailList.splice(0, 10)
+        },
+        show_small(){
+            this.small = true
+        },
+        hide_small(){
+            this.small = false
         }
     }
 }).mount('#app')
